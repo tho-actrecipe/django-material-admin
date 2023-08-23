@@ -1,33 +1,11 @@
-|pypi| |python| |django|
-
-.. .. |build|
-
-
-.. |pypi| image:: https://d25lcipzij17d.cloudfront.net/badge.svg?id=py&type=6&v=1.8.6&x2=0
-    :target: https://pypi.org/project/django-material-admin/
-.. |python| image:: https://img.shields.io/badge/python-3.4+-blue.svg
-    :target: https://www.python.org/
-.. |django| image:: https://img.shields.io/badge/django-2.2+|3.2-mediumseagreen.svg
-    :target: https://www.djangoproject.com/ 
-.. .. |build| image:: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com:8080/buildStatus/icon?job=Job1
-..    :target: http://ec2-35-157-197-184.eu-central-1.compute.amazonaws.com
-
 ==============================
 Django Material Administration
 ==============================
 
-
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/login.png
-
-.. **login**: *admin*
-
-.. **pass**: *123qaz123!A*
-
 Quick start
 -----------
 
- 
-**pip install django-material-admin**
+**pip install django-material-admin-plus**
 
 1. Add **material.admin** and **material.admin.default** to your INSTALLED_APPS setting instead of **django.contrib.admin**::
  - required
@@ -142,37 +120,3 @@ https://material.io/resources/icons/?style=baseline
         }
     }
 ##########################################################
-
-
-==============
-video lessons:
-==============
-
-- PySchool
-
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/pyself.png
-   :target: https://pyschool.tech/lessons/django-material-admin-installation
-
-
-==================
-Video instructions
-==================
-|
-|
-- Install Django
-
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material1.png
-   :target: https://youtu.be/LiTcyD9A1A0
-|
-|
-- Install Django-material-admin
-
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material2.png
-   :target: https://youtu.be/trY492bgNQU
-|
-|
-- Register models for material administration interface
-
-.. image:: https://raw.githubusercontent.com/MaistrenkoAnton/django-material-admin/master/app/demo/screens/material3.png
-   :target: https://youtu.be/_ifWi-a1z6M
-

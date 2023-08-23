@@ -15,3 +15,6 @@ package/material/
 .env
 .DS_Store
 .scannerwork/
+MANIFEST.in
+setup.py
+LICENCE
