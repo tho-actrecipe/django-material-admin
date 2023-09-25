@@ -77,6 +77,7 @@ INSTALLED_APPS = [
     'demo.relations',
     'demo.periods',
     'demo.profile',
+    'auditlog'
 ]
 
 MIDDLEWARE = [
@@ -89,6 +90,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'auditlog.middleware.AuditlogMiddleware'
 ]
 
 ROOT_URLCONF = 'demo.urls'

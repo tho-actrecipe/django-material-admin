@@ -23,8 +23,8 @@
             </div>
           {% else %}
             {% if field.is_readonly %}
-              <div class="readonly-label">{{ field.label_tag }}</div>
-              <div class="readonly">{{ field.contents }}</div>
+              <div style="width: 170px; height: 25px;">{{ field.label_tag }}</div>
+              <div style="padding: 5px; background-color: #f9f9f9;">{{ field.contents }}</div>
             {% else %}
               {{ field.label_tag }}
               {{ field.field }}

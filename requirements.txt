@@ -8,3 +8,4 @@ filefield-cache
 django-modeltranslation
 twine
 whitenoise
+django-auditlog

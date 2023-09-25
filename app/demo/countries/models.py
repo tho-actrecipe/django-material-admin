@@ -2,6 +2,8 @@ from django.conf import settings
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
+from auditlog.registry import auditlog
+
 from demo.countries.choices import COUNTRY_TYPES
 
 
@@ -78,3 +80,5 @@ class Country5(models.Model):
 
 class Country6(models.Model):
     name = models.CharField(_('Name'), max_length=64)
+
+auditlog.register(Country)
