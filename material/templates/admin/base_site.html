@@ -101,7 +101,7 @@
 
 {% block footer %}
     <script>
-        var datepickerOptions = {
+        let datepickerOptions = {
             autoClose: true,
             defaultDate: true,
             showClearBtn: true,
@@ -166,7 +166,7 @@
                 ]
             }
         };
-        var timeOptions = {
+        let timeOptions = {
             twelveHour: false,
             autoClose: true,
             showClearBtn: true,
@@ -176,7 +176,16 @@
                 done: '{% trans 'Ok' %}',
             }
         };
+        $(document).on('click', '.question', function () {
+            $("#changelist-form").append('<input type="hidden" name="select_across" value="1" class="select-across">');
+            let clearButton = document.querySelectorAll('.card-content span.clear')[0];
+            clearButton.style = "display: inline;"
+        })
 
+        $(document).on('click', '.card-content span.clear a', function () {
+            let clearButton = document.querySelectorAll('.card-content span.clear')[0];
+            clearButton.style = "display: none;"
+        })
     </script>
 
     <script src="{% static 'material/admin/js/materialize.min.js' %}"></script>
@@ -186,5 +195,6 @@
     <script src="{% static 'material/admin/js/tray.js' %}"></script>
     <script type="text/javascript" src="{% static 'material/admin/js/jquery.mousewheel.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'material/admin/js/jquery.jscrollpane.min.js' %}"></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js'></script>
+    <script src="{% static 'material/admin/js/jquery-ui.min.js' %}"></script>
+
 {% endblock %}

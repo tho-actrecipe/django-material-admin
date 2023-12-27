@@ -53,8 +53,8 @@ class PersonAdmin(ModelAdmin):
 
 
 @register(Country1)
-class PersonAdmin(ModelAdmin):
-    pass
+class Country1Admin(ModelAdmin):
+    list_per_page = 5
 
 
 @register(Country2)
